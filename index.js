@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
 res.send('Hello World');
 })
+
 app.get('/api/v1/users/:userId', (req, res) => {
 var users = {}
 let randomuserid = uuidv4()
